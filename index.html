@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=''/>
+    <link rel="stylesheet" href="style.css">
+    <title>NaJo</title>
+</head>
+<body>
+    <header>
+        <a href="#banner"><img src="./images/NajoLogoNegro.png" class="logo" alt="logo"></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Servicies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <img src="./images/bg1.jpg" alt="background networking" class='fitBg'>
+        <div class="content">
+            <h1>Najo Developers</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis enim assumenda omnis suscipit velit beatae</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="imgBx">
+            <img src="./images/aboutUs.jpg" alt="image About Us" class='fitBg'>
+        </div>
+        <div class="content">
+            <h2 class='titleText'>Boost your business with <span>Najo Developers</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem mollitia modi molestias asperiores temporibus. <br> <br> At possimus dolores sequi quam nisi perferendis officiis harum, aut quod odit minusLorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit voluptatum commodi, voluptatem placeat corporis illum illo alias, quis quisquam saepe enim ex adipisci natus aliquam similique odit voluptas repudiandae.
+            </p>
+            <a href="#" class="btn">Our Projects</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class='titleText'>Our <span>Services</span></h2>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', ()=>{
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
