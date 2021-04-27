@@ -28,15 +28,15 @@ header{
         font-size: 1.1em;
         font-weight: 500;
     }
-    .sticky{
+    &.sticky{
         background: #fff;
         padding: 0px 100px;
         box-shadow: 0 5px 20px rgba(0,0,0,.1);
     }
-    .sticky .logo{
+    &.sticky .logo{
         filter: none;
     }
-    .sticky .navigation li a{
+    &.sticky .navigation li a{
         font-size: 1.1em;
         font-weight: 500;
         color: #000;
