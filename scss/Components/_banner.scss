@@ -1,0 +1,25 @@
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fitBg{
+        filter: brightness(60%);
+    }
+    .content{
+        position: relative;
+        text-align: center;
+        max-width: 800px;
+    }
+    .content h1{
+        color: #fff;
+        font-size: 3em;
+        font-weight: 700;
+    }
+    .content p{
+        color: #fff;
+        font-size: 1.1em;
+    }
+}
