@@ -39,6 +39,86 @@
     </section>
     <section class="services" id="services">
         <h2 class='titleText'>Our <span>S</span>ervices</h2>
+        <div class="container">
+          <div class="card">
+            <div class="lado">
+                <h3 class="title" id="title" contenteditable="">Landig Page</h3>
+            </div>
+            <div class="lado detras">
+                <p>Ideal para presencia Online. Posicionar su marca, ofrecer un producto o servicios.</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+                    <div class="card">
+            <div class="lado">
+                <h3 class="title">One Page</h3>
+            </div>
+            <div class="lado detras">
+                <p>Un sitio web con más funcionalidades, y secciones. Ideal para tu negocio, rubro o profesión.</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+                    <div class="card">
+            <div class="lado">
+                <h3 class="title">Plan Básico</h3>
+            </div>
+            <div class="lado detras">
+                <p>Un diseño sencillo y básico para empezar a ser visible en el mundo digital. Ideal profesionales</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+                    <div class="card">
+            <div class="lado">
+                <h3 class="title">Plan Bronce</h3>
+            </div>
+            <div class="lado detras">
+                <p>Un sitio web con más funcionalidades, y secciones. Ideal para tu negocio, rubro o profesión.</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="lado">
+                <h3 class="title">Plan Platinum</h3>
+            </div>
+            <div class="lado detras">
+                <p>Un diseño Web con más secciones y funcionalidades. Para profesionales o Emprendedores.​</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+                    <div class="card">
+            <div class="lado">
+                <h3 class="title">Plan Gold</h3>
+            </div>
+            <div class="lado detras">
+                <p>Un diseño Web con más secciones y funcionalidades. Para profesionales o Emprendedores.</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+          <div class="card">
+            <div class="lado">
+                <h3 class="title">Tienda Avanzada</h3>
+            </div>
+            <div class="lado detras">
+                <p>Desarrollo web para E- Commerce avanzados, para vender sus productos.</p>
+                <button class=" ">click</button>
+            </div> 
+          </div>
+          <div class="card">
+            <div class="lado">
+                <h3 class="title">Tienda Básica</h3>
+            </div>
+            <div class="lado detras">
+                <p>Tienda Online Básica. Diseño básico y sencillo. Ideal para comenzar a vender online. Auto-administrable.</p>
+                <button class="">click</button>
+            </div> 
+          </div>
+        </div>          
+    </section>
+    <!--
+    <section class="services" id="services">
+
         <div class="content">
             <div class="card">
                 <div class="logo">
@@ -65,7 +145,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <section class="contact" id="contact">
         <div class="text">
             <h2 class="titleText"><span>C</span>ontact Us</h2>
@@ -87,11 +167,24 @@
             © 2021 Najo Developers.  All rights reserved. 
         </p>
     </footer>
-    <script type="text/javascript">
+    <script type="text/javascript" >
+
         window.addEventListener('scroll', ()=>{
             const header = document.querySelector('header');
             header.classList.toggle("sticky", window.scrollY > 0);
+
+           
         });
+    var title = document.getElementsByClassName("title");
+    console.log(title)
+    var shadow = '';
+    for (var i = 0; i < 20; i++) {
+        shadow +=(shadow ? ',':'') + i*1+'px '+ i*1+'px 0 #383737';
+    }
+    for(let j=0; j < title.length; j++){
+        title[j].style.textShadow = shadow;
+    }
+
     </script>
 </body>
 </html>
