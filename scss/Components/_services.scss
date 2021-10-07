@@ -8,40 +8,106 @@
 
 .container{
   display: flex;
-    height: 300px;
-  width: 600px;
+  height: 300px;
+  margin-bottom: 20px;
 }
 .card{
-  height: 280px;
-  width: 200px;
-  background-color: #17141d;
+  height: 300px;
+  width: 220px;
+  /*background-color: #4C4B4B;/*393838*/
+  background-image: url("../images/card1.png");
+/* background-position: bottom*/
+  /*object-fit: fill;*/
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
+  border: 1px solid black;
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+  transform-style: preserve-3d;
 }
+
 .card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-  z-index: 99;
+  transform: rotateY(180deg) translateY(-15px);;
+  transition: 0.6s ease-out;
+  box-shadow: 0px 0px 43px 2px rgba(0,0,0,0.76);
+  -webkit-box-shadow: 0px 0px 43px 2px rgba(0,0,0,0.76);
+  -moz-box-shadow: 0px 0px 43px 2px rgba(0,0,0,0.76);
 }
-.card:not(:first-child) {
-    margin-left: -50px;
+.lado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.detras{
+    background-color: #393838;/*222324*/
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    padding-top: 15px;
+    padding-left: 10px;
 }
 .card:hover ~ .card {
-
-  left: 60px;
   transition: 0.4s ease-out;
 }
-
-p{
-  width: 200px;
+.lado.detras p{
   color: white;
-  padding: 15px;
+  grid-row: 1;
+  font-weight: 200;
+  font-size: 18px;
+}
+.lado.detras{
+    display: grid;
+    grid-template-rows: 85% 10%;
+}
+.lado.detras button{
+    grid-row: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    display: block;
+    width: 150px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid #fff;
+    font-weight: 400;
+}
+.lado.detras button::after {
+  content: "";
+  background: #f5f5f5; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.lado.detras button:hover{
+    border: 2px solid #black;
+    color: black;
+}
+.lado.detras button:hover::after{
+      transition: all 0.3s ease-out;
+    transform: skewX(45deg) scale(1, 1);
 }
 .title {
   padding: 15px;
   color: white;
   font-weight: 300;
+  font-size: 38px;
+  text-shadow: 5px 2px #17141d;
+  transition: all 500ms ease;
 }
