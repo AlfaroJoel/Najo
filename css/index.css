@@ -6,6 +6,9 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+body{
+  background-color: #F7F7F7;
+}
 
 section {
   padding: 80px;
