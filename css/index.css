@@ -8,7 +8,7 @@
 }
 
 section {
-  padding: 100px;
+  padding: 80px;
 }
 
 .fitBg {
@@ -18,6 +18,10 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 
 header {
@@ -83,7 +87,7 @@ header.sticky .navigation li a {
   max-width: 450px;
 }
 .about .content .btn {
-  background: #3d1010;
+  background: #1F2F37;
   color: #fff;
 }
 
@@ -127,10 +131,6 @@ header.sticky .navigation li a {
 .btn:hover {
   letter-spacing: 3px;
 }
-.btn.btn-black {
-  color: #fff;
-  background: black;
-}
 
 .titleText {
   font-weight: 600;
@@ -138,12 +138,12 @@ header.sticky .navigation li a {
   word-spacing: 5px;
   line-height: 1.2em;
   font-size: 2em;
-  margin-bottom: 25px;
+  margin-bottom: 55px;
 }
 .titleText span {
   font-size: 1.1em;
   font-weight: 800;
-  color: #3d1010;
+  color: #24596A;
 }
 
 .services {
@@ -192,7 +192,7 @@ header.sticky .navigation li a {
 }
 
 .detras {
-  background-color: #393838;
+  background-color: #1A3B47;
   /*222324*/
   border-radius: 10px;
   transform: rotateY(180deg);
@@ -304,12 +304,12 @@ header.sticky .navigation li a {
 .contact .form h3 {
   margin-bottom: 10px;
 }
-.contact .form .btn {
+.contact .form .noHover {
   width: 100px;
-  margin: 5px;
   position: absolute;
-  right: -5px;
   bottom: 0;
+  background-color: #1F2F37;
+  color: #fff;
 }
 .contact .form input {
   margin-bottom: 20px;
@@ -323,6 +323,17 @@ header.sticky .navigation li a {
   border-radius: 5px;
   border: 1px solid black;
   resize: none;
+}
+.noHover{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  background: #fff;
+  color: #333;
+  transition: 0.4s;
+  cursor: pointer;
 }
 .redes{
   width: 100%;

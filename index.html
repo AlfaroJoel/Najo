@@ -127,34 +127,34 @@
                 <input type="text" placeholder='Name'>
                 <input type="text" placeholder='Email'>
                 <textarea cols="20" rows="10"></textarea>
-                <div class="btn btn-black">Send</div>
+                <a href='#' class="noHover">Send</a>
             </div>
             <img src="./images/contact1.png" class='imgContact' alt="Pages najo contact">
         </div>
         <div class='redes'>
-            <div class='redes__item'>
+            <a href='mailto:najodevs@gmail.com' class='redes__item'>
                 <svg class='redes__svg' width="32" height="22" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.0664 0H1.93359C0.86741 0 0 0.86741 0 1.93359V13.5352C0 14.6013 0.86741 15.4688 1.93359 15.4688H20.0664C21.1326 15.4688 22 14.6013 22 13.5352V1.93359C22 0.86741 21.1326 0 20.0664 0ZM17.971 1.28906L11 8.22499L4.02896 1.28906H17.971ZM2.53516 14.1797H1.93359C1.5782 14.1797 1.28906 13.8906 1.28906 13.5352V4.01784L2.53516 5.24528V14.1797ZM18.0898 14.1797H3.78125V6.52786L8.72115 11.4125C9.32856 12.0207 10.1379 12.3556 11 12.3556C11.8621 12.3556 12.6714 12.0207 13.2774 11.4139L18.0898 6.63807V14.1797ZM20.7109 13.5352C20.7109 13.8906 20.4218 14.1797 20.0664 14.1797H19.3789V5.3555L20.7109 4.01784V13.5352ZM20.7109 2.19944L12.3668 10.5016C12.0029 10.8659 11.5175 11.0666 11 11.0666C10.4825 11.0666 9.99711 10.8659 9.63179 10.5001L1.28906 2.19944V1.93359C1.28906 1.5782 1.5782 1.28906 1.93359 1.28906H2.20133L11 10.0434L19.7987 1.28906H20.0664C20.4218 1.28906 20.7109 1.5782 20.7109 1.93359V2.19944Z" fill="black"/>
                 </svg>
                 najodevs@gmail.com
-            </div>
+            </a>
             <div class='redes__item'>
                 <svg class='redes__svg' width="36" height="25" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.6578 9.89293L9.03273 8.5804C8.9206 8.52465 8.79596 8.5129 8.67761 8.54693C8.55925 8.58095 8.45357 8.65892 8.37647 8.76908L7.21395 10.4261C5.38949 9.42255 3.92121 7.70956 3.06099 5.58101L4.48133 4.22474C4.57594 4.13496 4.64291 4.01167 4.67209 3.87352C4.70127 3.73537 4.69107 3.58989 4.64305 3.4591L3.51803 0.396547C3.46532 0.255563 3.3721 0.140454 3.25444 0.0710686C3.13677 0.00168352 3.00205 -0.0176285 2.87349 0.0164626L0.435945 0.672724C0.311998 0.706116 0.201412 0.787537 0.122237 0.903697C0.0430613 1.01986 -2.85523e-05 1.1639 1.41945e-08 1.31231C1.41945e-08 8.3261 4.87274 14 10.8752 14C11.0024 14.0001 11.126 13.9499 11.2256 13.8575C11.3252 13.7651 11.395 13.6361 11.4236 13.4914L11.9861 10.6476C12.0152 10.4969 11.9983 10.3391 11.9383 10.2014C11.8784 10.0636 11.7792 9.95454 11.6578 9.89293V9.89293Z" fill="black"/>
                 </svg>
                 <div class='redes__phone'>
-                    <div>
+                    <a href="tel:+542281518296">
                         2281-518296
-                    </div>
-                    <div>
+                    </a>
+                    <a href="tel:+542284479600">
                         2284-479600
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <div class='wsp_contact'>
-        <img src="./images/wspicon.png" alt="wsp icon">
+        <a target='_blank' href='https://api.whatsapp.com/send?phone=542281518296&text=Mensaje%20desde%20Najo%20Page'><img src="./images/wspicon.png" alt="wsp icon"></a>
     </div>
     <footer>
         <p>
@@ -169,14 +169,14 @@
 
            
         });
-    var title = document.getElementsByClassName("title");
-    var shadow = '';
-    for (var i = 0; i < 20; i++) {
-        shadow +=(shadow ? ',':'') + i*1+'px '+ i*1+'px 0 #383737';
-    }
-    for(let j=0; j < title.length; j++){
-        title[j].style.textShadow = shadow;
-    }
+    // var title = document.getElementsByClassName("title");
+    // var shadow = '';
+    // for (var i = 0; i < 20; i++) {
+    //     shadow +=(shadow ? ',':'') + i*1+'px '+ i*1+'px 0 #383737';
+    // }
+    // for(let j=0; j < title.length; j++){
+    //     title[j].style.textShadow = shadow;
+    // }
 
     </script>
 </body>
