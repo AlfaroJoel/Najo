@@ -1,49 +1,92 @@
-.contact{
-    position: relative;
-    width: 100%;
-    height: 110vh;
-    .text{
-        text-align: center;
-    }
-    .content{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .imgContact{
-        background-size: cover;
-        width: 450px;
-    }
-    .form{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        height: 370px;
-    }
-    .form h3{
-        margin-bottom: 10px;
-    }
-    .form .btn{
-        width: 100px;
-        margin: 5px;
-        position: absolute;
-        right: -5px;
-        bottom: 0;
-    }
-    .form input{
-        margin-bottom: 20px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid black;
-    }
-    .form textarea{
-        height: 140px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid black;
-        resize: none;
-    }
+.contact {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+}
+.contact .text {
+  text-align: center;
+}
+.contact .content {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .imgContact {
+  background-size: cover;
+  width: 450px;
+}
+.contact .form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 370px;
+}
+.contact .form h3 {
+  margin-bottom: 10px;
+}
+.contact .form .noHover {
+  width: 100px;
+  position: absolute;
+  bottom: -50px;
+  background-color: #1F2F37;
+  color: #fff;
+}
+.contact .form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.contact .form textarea {
+  height: 140px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  resize: none;
+}
+.noHover{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  background: #fff;
+  color: #333;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.redes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.redes__item{
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+.redes__svg{
+  margin-right: 10px;
+}
+.redes__phone{
+  display: flex;
+  flex-direction: column;
+}
+.contact .titleText{
+  margin-bottom: 0px;
+}
+.contact .content{
+  margin-top: 10px
+}
+.wsp_contact{
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+}
+.wsp_contact img{
+  width: 50px;
 }

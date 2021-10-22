@@ -1,44 +1,44 @@
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    z-index: 9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: .5s;
-    .logo{
-        filter: invert(100%);
-        width: 8em;
-        background-size: cover;
-    }
-    .navigation{
-        position: relative;
-        display: flex;
-    }
-    .navigation li{
-        margin-left: 3em;
-        list-style: none;
-    }
-    .navigation li a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.1em;
-        font-weight: 500;
-    }
-    &.sticky{
-        background: #fff;
-        padding: 0px 100px;
-        box-shadow: 0 5px 20px rgba(0,0,0,.1);
-    }
-    &.sticky .logo{
-        filter: none;
-    }
-    &.sticky .navigation li a{
-        font-size: 1.1em;
-        font-weight: 500;
-        color: #000;
-    }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header .logo {
+  filter: invert(100%);
+  width: 8em;
+  background-size: cover;
+}
+header .navigation {
+  position: relative;
+  display: flex;
+}
+header .navigation li {
+  margin-left: 3em;
+  list-style: none;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+header.sticky {
+  background: #fff;
+  padding: 0px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header.sticky .logo {
+  filter: none;
+}
+header.sticky .navigation li a {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #000;
 }
