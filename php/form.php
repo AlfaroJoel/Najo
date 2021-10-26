@@ -25,6 +25,21 @@ if(!empty($_POST['nombre']) && !empty($_POST['phone']) && !empty($_POST['mail'])
 
         //if req is true, mostrar mensaje de enviado
         header("Location:index.html");
+}else{
+        if (empty($_POST["nombre"])) {
+            $nameErr = document.getElementById('errNombre');
+            $nameErr = 'Nombre es requerido';
+          }
+            
+        if (empty($_POST["mail"])) {
+            $errMail = document.getElementById('errMail');
+            $errMail = 'Mail es requerido';
+          }
+
+        if (empty($_POST["message"])) {
+            $errMsg = document.getElementById('errMsg');
+            $errMsg = 'Mensaje es requerido';
+          }
 }
 
 
