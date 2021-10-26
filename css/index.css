@@ -34,9 +34,9 @@ header {
   width: 100%;
   z-index: 9;
   transition: 0.5s;
+  background-color: #fff;
 }
 header .logo {
-  filter: invert(100%);
   width: 8em;
   background-size: cover;
 }
@@ -49,21 +49,9 @@ header .navigation li {
 }
 header .navigation li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: 500;
-}
-header.sticky {
-  background: #fff;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-header.sticky .logo {
-  filter: none;
-}
-header.sticky .navigation li a {
-  font-size: 1.1em;
-  font-weight: 500;
   color: #000;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .btnMenu:focus{
@@ -397,9 +385,30 @@ footer p {
     padding: 0 60px;
     z-index: 9;
     transition: 0.5s;
+    background-color: transparent;
   }
 
   header .navigation li {
     margin-left: 3em;
+  }
+  header.sticky {
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  header.sticky .logo {
+    filter: none;
+  }
+  header.sticky .navigation li a {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #000;
+  }
+  header .logo {
+    filter: invert(100%);
+  }
+
+  header .navigation li a {
+    text-decoration: none;
+    color: #fff;
   }
 }
