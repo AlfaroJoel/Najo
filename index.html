@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=''/>
+    <meta name="description" content='' />
     <link rel="shortcut icon" href="./images/najoBlanco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <title>NaJo</title>
 </head>
+
 <body>
     <header>
-        <a href="#banner"><img src="./images/najoLogo.png" class="logo" alt="logo"></a>
-        <ul class="navigation">
-            <li><a href="#banner">Inicio</a></li>
-            <li><a href="#about">Sobre nosotros</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+            <div class="container-fluid">
+                <a href="#banner"><img src="./images/najoLogo.png" class="logo" alt="logo"></a>
+                <button class="navbar-toggler btnMenu" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><svg width="42" height="32" viewBox="0 0 34 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="pathmenu" d="M3 21.8182H30.6818M3 3H30.6818H3ZM3 12.4091H30.6818H3Z" stroke="white"
+                                stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 navigation">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#banner">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <section class="banner" id="banner">
         <img src="./images/bg1.jpg" alt="background networking" class='fitBg'>
@@ -33,7 +61,10 @@
         </div>
         <div class="content">
             <h2 class='titleText'>Impulsa tu negocio con<span> Najo Developers</span></h2>
-            <p>Najo developers esta enfocado en brindar el mejor servicio para que tu idea o negocio crezca. Estamos comprometidos en brindarle soporte y la asesoria necesaria al cliente. <br> <br> Dentro de los servicios que ofrecemos, esta la creacion de un E-commerce, para locales de venta. Sistemas Web a medida. Creacion de portfolios, paginas informativas, entre otros.
+            <p>Najo developers esta enfocado en brindar el mejor servicio para que tu idea o negocio crezca. Estamos
+                comprometidos en brindarle soporte y la asesoria necesaria al cliente. <br> <br> Dentro de los servicios
+                que ofrecemos, esta la creacion de un E-commerce, para locales de venta. Sistemas Web a medida. Creacion
+                de portfolios, paginas informativas, entre otros.
             </p>
             <a href="#" class="btn">Nuestros planes</a>
         </div>
@@ -41,81 +72,83 @@
     <section class="services" id="services">
         <h2 class='titleText'>Our <span>S</span>ervices</h2>
         <div class="container">
-          <div class="card">
-            <div class="lado">
-                <h3 class="title" id="title" contenteditable="">Landig Page</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title" id="title" contenteditable="">Landig Page</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Ideal para presencia Online. Posicionar su marca, ofrecer un producto o servicios.</p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Ideal para presencia Online. Posicionar su marca, ofrecer un producto o servicios.</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
-                    <div class="card">
-            <div class="lado">
-                <h3 class="title">One Page</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">One Page</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Un sitio web con más funcionalidades, y secciones. Ideal para tu negocio, rubro o profesión.</p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Un sitio web con más funcionalidades, y secciones. Ideal para tu negocio, rubro o profesión.</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
-                    <div class="card">
-            <div class="lado">
-                <h3 class="title">Plan Básico</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">Plan Básico</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Un diseño sencillo y básico para empezar a ser visible en el mundo digital. Ideal profesionales
+                    </p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Un diseño sencillo y básico para empezar a ser visible en el mundo digital. Ideal profesionales</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
-                    <div class="card">
-            <div class="lado">
-                <h3 class="title">Plan Bronce</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">Plan Bronce</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Un sitio web con más funcionalidades, y secciones. Ideal para tu negocio, rubro o profesión.</p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Un sitio web con más funcionalidades, y secciones. Ideal para tu negocio, rubro o profesión.</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
         </div>
         <div class="container">
-          <div class="card">
-            <div class="lado">
-                <h3 class="title">Plan Platinum</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">Plan Platinum</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Un diseño Web con más secciones y funcionalidades. Para profesionales o Emprendedores.​</p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Un diseño Web con más secciones y funcionalidades. Para profesionales o Emprendedores.​</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
-                    <div class="card">
-            <div class="lado">
-                <h3 class="title">Plan Gold</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">Plan Gold</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Un diseño Web con más secciones y funcionalidades. Para profesionales o Emprendedores.</p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Un diseño Web con más secciones y funcionalidades. Para profesionales o Emprendedores.</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
-          <div class="card">
-            <div class="lado">
-                <h3 class="title">Tienda Avanzada</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">Tienda Avanzada</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Desarrollo web para E- Commerce avanzados, para vender sus productos.</p>
+                    <button class=" "><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Desarrollo web para E- Commerce avanzados, para vender sus productos.</p>
-                <button class=" "><a href="#contact">click</a></button>
-            </div> 
-          </div>
-          <div class="card">
-            <div class="lado">
-                <h3 class="title">Tienda Básica</h3>
+            <div class="card">
+                <div class="lado">
+                    <h3 class="title">Tienda Básica</h3>
+                </div>
+                <div class="lado detras">
+                    <p>Tienda Online Básica. Diseño básico y sencillo. Ideal para comenzar a vender online.
+                        Auto-administrable.</p>
+                    <button class=""><a href="#contact">click</a></button>
+                </div>
             </div>
-            <div class="lado detras">
-                <p>Tienda Online Básica. Diseño básico y sencillo. Ideal para comenzar a vender online. Auto-administrable.</p>
-                <button class=""><a href="#contact">click</a></button>
-            </div> 
-          </div>
-        </div>          
+        </div>
     </section>
     <section class="contact" id="contact">
         <div class="text">
@@ -124,26 +157,32 @@
         </div>
         <div class="content">
             <form class="form" action="form.php" method="post">
-                    <h3>Enviar mensaje</h3>
-                    <input type="text" placeholder='Name' name="nombre" required>
-                    <input type="text" placeholder='Phone' name="phone">
-                    <input type="text" placeholder='Email' name="mail" required>
-                    <textarea cols="20" rows="10" name="message" required></textarea>
-                    <button type="submit" class="noHover">Send</button>
-                </form>
+                <h3>Enviar mensaje</h3>
+                <input type="text" placeholder='Name' name="nombre" required>
+                <input type="text" placeholder='Phone' name="phone">
+                <input type="text" placeholder='Email' name="mail" required>
+                <textarea cols="20" rows="10" name="message" required></textarea>
+                <button type="submit" class="noHover">Send</button>
+            </form>
 
-            <img src="./images/contact1.png" class='imgContact' alt="Pages najo contact">
+            <img src="./images/contact1.png" class='imgContact d-none d-lg-block' alt="Pages najo contact">
         </div>
-        <div class='redes'>
+        <div class='redes d-flex flex-column flex-lg-row'>
             <a href='mailto:najodevs@gmail.com' class='redes__item'>
-                <svg class='redes__svg' width="32" height="22" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.0664 0H1.93359C0.86741 0 0 0.86741 0 1.93359V13.5352C0 14.6013 0.86741 15.4688 1.93359 15.4688H20.0664C21.1326 15.4688 22 14.6013 22 13.5352V1.93359C22 0.86741 21.1326 0 20.0664 0ZM17.971 1.28906L11 8.22499L4.02896 1.28906H17.971ZM2.53516 14.1797H1.93359C1.5782 14.1797 1.28906 13.8906 1.28906 13.5352V4.01784L2.53516 5.24528V14.1797ZM18.0898 14.1797H3.78125V6.52786L8.72115 11.4125C9.32856 12.0207 10.1379 12.3556 11 12.3556C11.8621 12.3556 12.6714 12.0207 13.2774 11.4139L18.0898 6.63807V14.1797ZM20.7109 13.5352C20.7109 13.8906 20.4218 14.1797 20.0664 14.1797H19.3789V5.3555L20.7109 4.01784V13.5352ZM20.7109 2.19944L12.3668 10.5016C12.0029 10.8659 11.5175 11.0666 11 11.0666C10.4825 11.0666 9.99711 10.8659 9.63179 10.5001L1.28906 2.19944V1.93359C1.28906 1.5782 1.5782 1.28906 1.93359 1.28906H2.20133L11 10.0434L19.7987 1.28906H20.0664C20.4218 1.28906 20.7109 1.5782 20.7109 1.93359V2.19944Z" fill="black"/>
+                <svg class='redes__svg' width="32" height="22" viewBox="0 0 22 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.0664 0H1.93359C0.86741 0 0 0.86741 0 1.93359V13.5352C0 14.6013 0.86741 15.4688 1.93359 15.4688H20.0664C21.1326 15.4688 22 14.6013 22 13.5352V1.93359C22 0.86741 21.1326 0 20.0664 0ZM17.971 1.28906L11 8.22499L4.02896 1.28906H17.971ZM2.53516 14.1797H1.93359C1.5782 14.1797 1.28906 13.8906 1.28906 13.5352V4.01784L2.53516 5.24528V14.1797ZM18.0898 14.1797H3.78125V6.52786L8.72115 11.4125C9.32856 12.0207 10.1379 12.3556 11 12.3556C11.8621 12.3556 12.6714 12.0207 13.2774 11.4139L18.0898 6.63807V14.1797ZM20.7109 13.5352C20.7109 13.8906 20.4218 14.1797 20.0664 14.1797H19.3789V5.3555L20.7109 4.01784V13.5352ZM20.7109 2.19944L12.3668 10.5016C12.0029 10.8659 11.5175 11.0666 11 11.0666C10.4825 11.0666 9.99711 10.8659 9.63179 10.5001L1.28906 2.19944V1.93359C1.28906 1.5782 1.5782 1.28906 1.93359 1.28906H2.20133L11 10.0434L19.7987 1.28906H20.0664C20.4218 1.28906 20.7109 1.5782 20.7109 1.93359V2.19944Z"
+                        fill="black" />
                 </svg>
                 najodevs@gmail.com
             </a>
             <div class='redes__item'>
-                <svg class='redes__svg' width="36" height="25" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.6578 9.89293L9.03273 8.5804C8.9206 8.52465 8.79596 8.5129 8.67761 8.54693C8.55925 8.58095 8.45357 8.65892 8.37647 8.76908L7.21395 10.4261C5.38949 9.42255 3.92121 7.70956 3.06099 5.58101L4.48133 4.22474C4.57594 4.13496 4.64291 4.01167 4.67209 3.87352C4.70127 3.73537 4.69107 3.58989 4.64305 3.4591L3.51803 0.396547C3.46532 0.255563 3.3721 0.140454 3.25444 0.0710686C3.13677 0.00168352 3.00205 -0.0176285 2.87349 0.0164626L0.435945 0.672724C0.311998 0.706116 0.201412 0.787537 0.122237 0.903697C0.0430613 1.01986 -2.85523e-05 1.1639 1.41945e-08 1.31231C1.41945e-08 8.3261 4.87274 14 10.8752 14C11.0024 14.0001 11.126 13.9499 11.2256 13.8575C11.3252 13.7651 11.395 13.6361 11.4236 13.4914L11.9861 10.6476C12.0152 10.4969 11.9983 10.3391 11.9383 10.2014C11.8784 10.0636 11.7792 9.95454 11.6578 9.89293V9.89293Z" fill="black"/>
+                <svg class='redes__svg' width="36" height="25" viewBox="0 0 12 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.6578 9.89293L9.03273 8.5804C8.9206 8.52465 8.79596 8.5129 8.67761 8.54693C8.55925 8.58095 8.45357 8.65892 8.37647 8.76908L7.21395 10.4261C5.38949 9.42255 3.92121 7.70956 3.06099 5.58101L4.48133 4.22474C4.57594 4.13496 4.64291 4.01167 4.67209 3.87352C4.70127 3.73537 4.69107 3.58989 4.64305 3.4591L3.51803 0.396547C3.46532 0.255563 3.3721 0.140454 3.25444 0.0710686C3.13677 0.00168352 3.00205 -0.0176285 2.87349 0.0164626L0.435945 0.672724C0.311998 0.706116 0.201412 0.787537 0.122237 0.903697C0.0430613 1.01986 -2.85523e-05 1.1639 1.41945e-08 1.31231C1.41945e-08 8.3261 4.87274 14 10.8752 14C11.0024 14.0001 11.126 13.9499 11.2256 13.8575C11.3252 13.7651 11.395 13.6361 11.4236 13.4914L11.9861 10.6476C12.0152 10.4969 11.9983 10.3391 11.9383 10.2014C11.8784 10.0636 11.7792 9.95454 11.6578 9.89293V9.89293Z"
+                        fill="black" />
                 </svg>
                 <div class='redes__phone'>
                     <a href="tel:+542281518296">
@@ -157,21 +196,38 @@
         </div>
     </section>
     <div class='wsp_contact'>
-        <a target='_blank' href='https://api.whatsapp.com/send?phone=542281518296&text=Hola!%20Me%20comunico%20para%20saber%20mas%20sobre%20los%20servicios%20que%20ofrecen!'><img src="./images/wspicon.png" alt="wsp icon"></a>
+        <a target='_blank'
+            href='https://api.whatsapp.com/send?phone=542281518296&text=Hola!%20Me%20comunico%20para%20saber%20mas%20sobre%20los%20servicios%20que%20ofrecen!'><img
+                src="./images/wspicon.png" alt="wsp icon"></a>
     </div>
     <footer>
         <p>
-            © 2021 Najo Developers.  All rights reserved. 
+            © 2021 Najo Developers. All rights reserved.
         </p>
     </footer>
-    <script type="text/javascript" >
-
-        window.addEventListener('scroll', ()=>{
-            const header = document.querySelector('header');
+    <script type="text/javascript">
+        const header = document.querySelector('header');
+        const btnMenu = document.querySelector('.navbar-toggler');
+        const pathMenu = document.querySelector('.pathmenu');
+        const navItems = document.querySelectorAll('.nav-item')
+        window.addEventListener('scroll', () => {
             header.classList.toggle("sticky", window.scrollY > 0);
-
-           
+            if(window.scrollY > 0){
+                pathMenu.style.stroke = "black"
+            }else{
+                pathMenu.style.stroke = "white"
+            }
         });
+        btnMenu.addEventListener('click', () => {
+            if(window.scrollY == 0){
+                header.classList.toggle("sticky");
+                pathMenu.style.stroke = "black"
+            }
+        })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
